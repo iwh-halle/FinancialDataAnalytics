@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14589,23 +14589,387 @@ MLU - Martin Luther University Halle-Wittenberg</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Learning-experience">Learning experience<a class="anchor-link" href="#Learning-experience">&#182;</a></h2><p>This course is predominantly hands on and draws from several subject areas, such as financial economics, data science, textual analysis, etc. The fundamental concept is to <strong>introduce and implement concepts that are relevant to financial economists</strong>. As such, in class and grading, we focus both on knowledge transfer as well as the solution.</p>
+<p><em>I hate programming!</em>&lt;/br&gt;
+<em>I hate programming!</em>&lt;/br&gt;
+<em>I hate programming!</em>&lt;/br&gt;
+<em>OH! IT WORKS!</em>&lt;/br&gt;
+<em>I love programming!</em>&lt;/br&gt;</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Materials">Materials<a class="anchor-link" href="#Materials">&#182;</a></h3><p>The course is hosted as a Git repository on GitHub (see README.md therein): <a href="https://github.com/cafawo/FinancialDataAnalytics">https://github.com/cafawo/FinancialDataAnalytics</a></p>
+<p>We will rely heavily on Jupyter notebooks during the class. <strong>Especially during class and as a backup</strong>, you can always open the latest version of the material using:</p>
+<ul>
+<li>the interactive <a href="https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb"><strong>Colab version</strong></a></li>
+<li>or a static <a href="https://cafawo.github.io/FinancialDataAnalytics/slides.html">html version</a></li>
+</ul>
+<blockquote><p>"Colaboratory, or “Colab” for short, is a product from Google Research. Colab allows anybody to write and execute arbitrary python code through the browser, and is especially well suited to machine learning, data analysis and education. More technically, Colab is a hosted Jupyter notebook service that requires no setup to use, while providing access free of charge to computing resources including GPUs." <a href="https://research.google.com/colaboratory/faq.html">(Google, 2023)</a></p>
+</blockquote>
+<p>Here you can find Colab links for all notebooks in the repository:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This will convert the notebook to a html file</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Yeah I know, this cell does not run on Colab. :)</span>
+<span class="sd">The solution requires web scraping or the GitHub Python API.</span>
+<span class="sd">If you have a better solution, open a pull request.</span>
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="c1"># Convert to html slides</span>
-<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">'jupyter nbconvert slides.ipynb --to html'</span><span class="p">)</span>
+<span class="n">colab_url</span> <span class="o">=</span> <span class="s2">&quot;https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/&quot;</span>
+<span class="c1"># Loop through all the directories and files in the root directory and its subdirectories</span>
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="c1"># Check if the file has a .ipynb extension</span>
+        <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ipynb&#39;</span><span class="p">):</span>
+            <span class="c1"># Extract the relative path to the notebook</span>
+            <span class="n">notebook_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+            <span class="c1"># Print the Colab url</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">colab_url</span> <span class="o">+</span> <span class="n">notebook_path</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb
+https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/homework/01_setup.ipynb
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Grading">Grading<a class="anchor-link" href="#Grading">&#182;</a></h3><p><strong>Deliverables:</strong></p>
+<ol>
+<li>Small homework assignments are designed to keep track of your progress (individually)</li>
+<li>Two case studies on current topics in data science and financial economics (individually)</li>
+<li>One presentation on libraries, tools or data science topics that cannot be covered in detail during the classes (potentially in groups)</li>
+</ol>
+<p>All students are requested to hand in their homework, cases and presentation slides as <strong>one Git repository</strong>. This repository is submitted only once, by the end of the entire course. Please note that Git keeps track of changes made (when and by whom) in a repository, copy pasting a repository - i.e. plagiarism - from a colleague will not be tolerated.</p>
+<p><strong>Deadlines</strong> are enforced through the <strong>commit timestamps</strong> within your repository. For example, a homework assignment has to be commited before the start of the following lecture (where the solution is discussed). Homework assignments that are commited before the deadline are equally weighted, others are ignored(!). You have to submit a <strong>minimum of 4</strong> homework assignments.</p>
+<p><strong>Bonus points:</strong></p>
+<p>Bonus points are awarded to incentivize a collaborative class environnement. Points are awarded for <strong>asking, answering and voting</strong> on Q&amp;A here: <a href="https://github.com/cafawo/FinancialDataAnalytics/discussions">https://github.com/cafawo/FinancialDataAnalytics/discussions</a></p>
+<p>You are also allowed to ask and answer questions yourself. Please note that the discussion board is monitored and should be used strictly for Q&amp;A that relates to the class. "How do you like the food in the dining hall?" is not considered a relevant question, hence, does not get you any points. You are allowed to cite and link external sources (e.g. Stack Overflow). You can add an additional answer (there is a voting system).</p>
+<p>Additionally, you are very much invited to propose changes (so called pull-requests) to the course repository, see <a href="https://github.com/cafawo/FinancialDataAnalytics/pulls">https://github.com/cafawo/FinancialDataAnalytics/pulls</a></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Tech-requirements">Tech requirements<a class="anchor-link" href="#Tech-requirements">&#182;</a></h2><p>This class requires you to run Python codes (incl. scripts and Jupyter notebooks). Furthermore, we use Git and GitHub as a versioning system. All software are open source and/or free!</p>
+<p>If you do not have the tech yet:</p>
+<ul>
+<li>Install Python (I highly recommend Anaconda):<ul>
+<li><a href="https://www.anaconda.com/products/distribution">https://www.anaconda.com/products/distribution</a></li>
+</ul>
+</li>
+<li>Install Git (choose one of these):<ul>
+<li><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+<li><a href="https://anaconda.org/anaconda/git">https://anaconda.org/anaconda/git</a></li>
+</ul>
+</li>
+</ul>
+<p>The remainder of the slides assumes that you have both Python and Git installed on your system. Nevertheless, should you encounter difficulties, consider using Colab (see "Materials" above).</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Git-and-GitHub">Git and GitHub<a class="anchor-link" href="#Git-and-GitHub">&#182;</a></h2><p><img src="https://github.com/cafawo/Derivatives/blob/main/figures/git.png?raw=1" alt="git.png"></p>
+<h3 id="Git-(local-repository)">Git (local repository)<a class="anchor-link" href="#Git-(local-repository)">&#182;</a></h3><blockquote><p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. <a href="https://git-scm.com/">(see Git, 2023)</a></p>
+</blockquote>
+<p>Some source-code editors come with build-in Git (and even GitHub) capabilities or can be extended (e.g. <a href="https://code.visualstudio.com/">Microsoft's Visual Studio Code</a>, which I use during this course).</p>
+<p>Your local repository is essentially a folder on your local file system. Changes made in that folder can be committed to the (local) git repository.</p>
+<p>First, "stage" your changes - this is sth. like a pre-commit:</p>
+<div class="highlight"><pre><span></span><span class="c1"># The &#39;*&#39; adds all changes made in your folder (you should be more selective)</span>
+git add *
+</pre></div>
+<p>Second, commit your staged changes to the local repository:</p>
+<div class="highlight"><pre><span></span>git commit -m <span class="s1">&#39;Commit message&#39;</span>
+</pre></div>
+<p>In the broadest sense, you could see Git as a block chain of commits (changes) made to your repository. You can thus</p>
+<ul>
+<li>observe a complete history.</li>
+<li><code>git checkout</code> the state at any commit to the repository.</li>
+</ul>
+<p>Why Git? ...</p>
+<p><img src="https://d1.awsstatic.com/product-marketing/DevOps/continuous_integration.4f4cddb8556e2b1a0ca0872ace4d5fe2f68bbc58.png" alt="conint.png"></p>
+<blockquote><p>Continuous integration is a DevOps software development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run. <a href="https://aws.amazon.com/devops/continuous-integration">AWS, 2023</a></p>
+</blockquote>
+<p>More on Git:</p>
+<ul>
+<li>About Git itself: <a href="https://git-scm.com/about">https://git-scm.com/about</a></li>
+<li>Getting started (videos, tutorials): <a href="https://git-scm.com/doc">https://git-scm.com/doc</a></li>
+</ul>
+<h3 id="GitHub-(remote-repository)">GitHub (remote repository)<a class="anchor-link" href="#GitHub-(remote-repository)">&#182;</a></h3><blockquote><p>GitHub is an Internet hosting service for software development and version control using Git.</p>
+</blockquote>
+<p>Connecting to the remote repository</p>
+<p>After installing git, you can <code>clone</code> the course repository to your local system:</p>
+<div class="highlight"><pre><span></span>git clone https://github.com/cafawo/FinancialDataAnalytics.git
+</pre></div>
+<p>Your local Git repository remembers its origins. This enables you to <code>pull</code> updates from the remote (Git does not synchronize automatically).</p>
+<div class="highlight"><pre><span></span>git pull
+</pre></div>
+<p>If you have write access to the remote, you can also <code>push</code> changes to it.</p>
+<div class="highlight"><pre><span></span>git push
+</pre></div>
+<p>Careful: Git tries its best to merge the remote with the local repository, however, might fail if the two repositories are 'too' diverging. This should not concern you too much as a single user, but becomes very relevant when collaborating on a remote.</p>
+<p>This is all we need for this course, however, it is only the tip of the iceberg. More on GitHub:</p>
+<ul>
+<li>Working with GitHub (remotes): <a href="https://skills.github.com/">https://skills.github.com/</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Python">Python<a class="anchor-link" href="#Python">&#182;</a></h2><ul>
+<li>Python is an open-source programming language that can be downloaded and used for free.</li>
+<li>Python was created by Guido van Rossum and first published in 1991.</li>
+<li>Today the language is largely developed by the Python Software Foundation, a nonprofit organization.</li>
+<li>It is named after the British comedy group "Monty Python".</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If you are new to Python, many examples and extended information can be found on the following websites:</p>
+<ul>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide">Beginners' Guide</a></li>
+<li><a href="https://docs.python.org/3/tutorial/">Python.org</a></li>
+<li><a href="http://scipy-lectures.org/_downloads/ScipyLectures-simple.pdf">Scipy Lectures</a></li>
+<li><a href="https://docs.python-guide.org">The Hitchhiker’s Guide to Python</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Pros:</p>
+<ul>
+<li><strong>Universal</strong>: Python runs on any operating system.</li>
+<li><strong>Easy to learn</strong>: Although Python is highly versatile (e.g. can be used for scientific computing), it is relatively easy to learn.</li>
+<li><strong>Readable code</strong>: Python is a high-level programming language, making it easy to read and work with.</li>
+<li><strong>General purpose</strong>: The language can be applied to solve different problems at hand.</li>
+<li><strong>Open source</strong> and <strong>free</strong>.</li>
+<li><strong>Cross-platform</strong></li>
+<li><strong>Indentation aware</strong>: indentation is used instead of braces to mark code blocks.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li><strong>Speed</strong>: While Python is not slow, it cannot keep up with compiled languages such as C, C++, Fortran, COBOL, etc.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Running-Python">Running Python<a class="anchor-link" href="#Running-Python">&#182;</a></h3><p>You can call <code>python</code> directly from a shell or start an online version at <a href="https://www.python.org/shell/">online shell</a>. This gives you a nice calculator, but has limited use for our class. We will focus on scripts (.py suffix) and Jupyter notebooks (.ipynb suffix).</p>
+<h4 id="Scripts-(.py-suffix)">Scripts (<strong>.py</strong> suffix)<a class="anchor-link" href="#Scripts-(.py-suffix)">&#182;</a></h4><p>For our development process we usually focus on python scripts. These scripts can be edited with any text editor. A python script, e.g. run.py, can be executed in the shell</p>
+
+<pre><code>python run.py</code></pre>
+<p>You will have more fun when opening scripts inside an <strong>IDE</strong> (Integrated Development Environment), which is an application that integrates programming, running code, debugging, etc. One example is <a href="https://www.spyder-ide.org/">Spyder</a>, which ships directly with anaconda.</p>
+<h4 id="Jupyter-notebooks-(.ipynb-suffix)">Jupyter notebooks (<strong>.ipynb</strong> suffix)<a class="anchor-link" href="#Jupyter-notebooks-(.ipynb-suffix)">&#182;</a></h4><blockquote><p>The Jupyter Notebook is a web-based interactive computing platform that allows users to author data- and code-driven narratives that combine live code, equations, narrative text, visualizations, interactive dashboards and other media. <a href="https://jupyter.org/about">(see Jupyter.org, 2023)</a></p>
+</blockquote>
+<p>Jupyter notebooks run out of the box with our Anaconda distribution. This script here is written in Jupyter. (Remember the backup solution using Colab, which we discussed initially.)</p>
+<p>Some source-code editors can also open and run Jupyter notebooks (e.g. <a href="https://code.visualstudio.com/">Microsoft's Visual Studio Code</a>, which I use during this course).</p>
+<p>I recommend Jupyter notebooks as a presentation tool and python scripts for the development of more complex systems.</p>
+<p>Jupyter notebooks differentiate two basic input cells:</p>
+<h4 id="Text-cells-aka-markdown-cells">Text cells aka markdown cells<a class="anchor-link" href="#Text-cells-aka-markdown-cells">&#182;</a></h4><p>This is a <strong>text cell</strong>. You can <strong>double-click</strong> to edit this cell. Text cells
+use markdown syntax. To learn more, see this <a href="https://colab.research.google.com/notebooks/markdown_guide.ipynb">markdown
+guide</a>.</p>
+<p>You can also add math to text cells using <a href="http://www.latex-project.org/">LaTeX</a>
+to be rendered by <a href="https://www.mathjax.org">MathJax</a>. Just place the statement
+within a pair of <strong>\$</strong> signs. For example <code>$\sqrt{3x-1}+(1+x)^2$</code> becomes
+$\sqrt{3x-1}+(1+x)^2.$</p>
+<h5 id="Code-cells">Code cells<a class="anchor-link" href="#Code-cells">&#182;</a></h5><p>Below is a <strong>code cell</strong>.</p>
+<ul>
+<li>Click the <strong>Play icon</strong> in the left gutter of the cell;</li>
+<li>Type <strong>Cmd/Ctrl+Enter</strong> to run the cell in place;</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>12
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This will convert the notebook to a html file</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="c1"># Convert to html slides</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;jupyter nbconvert slides.ipynb --to html&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
