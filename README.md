@@ -71,6 +71,7 @@ This course is predominantly hands on and draws from several subject areas, such
 * "The big short" (A. McKay)
 * "Margin Call" (J. C. Chandor)
 * https://stackoverflow.com/
+* https://docs.python.org/3/tutorial/index.html
 
 
 ## Grading Policy
