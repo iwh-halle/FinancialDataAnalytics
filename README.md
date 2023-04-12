@@ -95,6 +95,7 @@ All students are requested to hand in their homework, cases and presentation sli
 
 ### Lecture 1: Introduction
 
+* Discussion of grading scheme
 * Setting up the tech
   * Git and GitHub
   * Necessary Python libraries (Anaconda distribution)
