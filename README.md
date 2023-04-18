@@ -102,7 +102,13 @@ All students are requested to hand in their homework, cases and presentation sli
 * Introduction to the Python programming language
 
 
-### Lecture 2: TBA 
+### Lecture 2: Python basics
+
+* Data types and structures
+* Packages and modules
+* Complex data structures
+* Plotting
+
 
 ### ...
 
