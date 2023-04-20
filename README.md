@@ -85,8 +85,20 @@ The grading policy is discussed in detail during the first lecture.
   * Participation in GitHub discussions: https://github.com/cafawo/FinancialDataAnalytics/discussions
   * Bug bounty (pull requests): https://github.com/cafawo/FinancialDataAnalytics/pulls
 
-All students are requested to hand in their homework, cases and presentation slides as one Git repository. We will discuss this during the first lecture.
+### How to submit your work
 
+All students are requested to [commit](https://git-scm.com/docs/git-commit) and [push](https://git-scm.com/docs/git-push) their homework, cases and presentation material to one GitHub repository. We will discuss this during the first lecture, also see [/homework/01_setup.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/homework/01_setup.ipynb). In order to submit your hard work, you are requested to add GitHub user: '[birte0](https://github.com/birte0)' to your repository **before the last lecture(!)**, see [information on how to invite collaborators HERE](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). We will notify you once your repository has been successfully registered.
+
+### Deadlines
+
+* Homework assignments have to be commited before the subsequent lecture
+* Case submission deadlines will be announced with the case description
+
+The deadlines for all deliverables are tracked through their commit timestamp. As such, it does not matter at what point in time during the lecture you register your GitHub repository (see previous section). Should you be interested in the timestamp for a specific commit, try this:
+
+```
+git show -s <commit>
+```
 
 
 
