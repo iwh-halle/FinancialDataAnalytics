@@ -122,6 +122,15 @@ git show -s <commit>
 * Plotting
 
 
+### Lecture 3: Probabilities
+
+* Random numbers
+* Probability distributions
+* Cholesky decomposition
+* Stochastic processes
+* Monte Carlo simulation
+
+
 ### ...
 
 
