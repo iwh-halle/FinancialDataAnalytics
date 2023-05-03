@@ -105,7 +105,7 @@ git show -s <commit>
 
 ## Lectures
 
-### Lecture 1: Introduction
+### Lecture 1: Introduction ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
 
 * Discussion of grading scheme
 * Setting up the tech
@@ -114,7 +114,7 @@ git show -s <commit>
 * Introduction to the Python programming language
 
 
-### Lecture 2: Python basics
+### Lecture 2: Python basics ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
 
 * Data types and structures
 * Packages and modules
@@ -122,13 +122,17 @@ git show -s <commit>
 * Plotting
 
 
-### Lecture 3: Probabilities
+### Lecture 3, 4: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
 
 * Random numbers
 * Probability distributions
 * Cholesky decomposition
+* Numerical integration
+* Numerical optimization
 * Stochastic processes
 * Monte Carlo simulation
+* Valuation
+* Risk measures
 
 
 ### ...
