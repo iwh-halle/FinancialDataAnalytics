@@ -135,6 +135,25 @@ git show -s <commit>
 * Risk measures
 
 
+### Financial time series ([slides_pt3.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
+
+* Correlation
+* Linear regression models (OLS)
+* Auto regressive models (AR)
+* Moving average (MA)
+* Auto Regressive Moving Average (ARMA)
+* Generalized Auto-Regressive Conditional Heteroscedasticity (GARCH)
+* Cointegration
+
+
+### Data management
+* Object-oriented programming
+* Loose coupling
+* Structured query language (SQL)
+* Market data APIs
+* .gitignore
+
+
 ### ...
 
 
