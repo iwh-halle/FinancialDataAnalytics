@@ -55,12 +55,13 @@ FinancialDataAnalytics/
 │   └── ...  
 ├── README.md  # Syllabus
 ├── slides.ipynb  # MAIN source of information for this class
+├── slides_pt[n].ipynb  # See 'structure' below
 ├── slides.html   # Static version of the script
 └── ...  # TBA
 ```
 
 As a backup, instead of opening .ipynb files locally, you can open the slides
-* using [**Google's Colab HERE**](https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb).
+* using [**Google's Colab HERE**](https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb),
 * or as a static (offline) [html version HERE](https://cafawo.github.io/FinancialDataAnalytics/slides.html).
 
 
@@ -103,26 +104,21 @@ git show -s <commit>
 
 
 
-## Lectures
+## Structure
 
-### Lecture 1: Introduction ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
+### Part 1: Introduction ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
 
 * Discussion of grading scheme
 * Setting up the tech
   * Git and GitHub
   * Necessary Python libraries (Anaconda distribution)
 * Introduction to the Python programming language
-
-
-### Lecture 2: Python basics ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
-
 * Data types and structures
 * Packages and modules
 * Complex data structures
 * Plotting
 
-
-### Lecture 3, 4: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
+### Part 2: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
 
 * Random numbers
 * Probability distributions
@@ -134,27 +130,32 @@ git show -s <commit>
 * Valuation
 * Risk measures
 
-
-### Financial time series ([slides_pt3.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
+### Part 3: Financial time series ([slides_pt3.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
 
 * Correlation
 * Linear regression models (OLS)
 * Auto regressive models (AR)
-* Moving average (MA)
-* Auto Regressive Moving Average (ARMA)
-* Generalized Auto-Regressive Conditional Heteroscedasticity (GARCH)
+* Moving average models (MA)
+* Auto regressive moving average (ARMA)
 * Cointegration
+* Empirical stylized facts
 
-
-### Data management
+### Part 4: Data management ([slides_pt4.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt4.ipynb))
 * Object-oriented programming
 * Loose coupling
-* Structured query language (SQL)
 * Market data APIs
-* .gitignore
+* Structured query language (SQL)
+* More on Git (.gitignore)
 
+### Part 5: Algorithmic trading
+* Strategy development
+* Back-testing
+* (Paper-)Trading and execution
+* Monitoring and reporting
 
-### ...
+### Part 6: Server infrastructure
+* Python environments
+* Pythonanywhere
 
 
 ## Disclaimer:
