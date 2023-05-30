@@ -80,7 +80,7 @@ This course is predominantly hands on and draws from several subject areas, such
 The grading policy is discussed in detail during the first lecture.
 
 * Homework assignments: 20%
-* Case studies: 50%
+* Case study: 50%
 * Presentation: 30%
 * Bonus points: + 15%
   * Participation in GitHub discussions: https://github.com/cafawo/FinancialDataAnalytics/discussions
@@ -146,17 +146,14 @@ git show -s <commit>
 * Market data APIs
 * Structured query language (SQL)
 * More on Git (.gitignore)
+* Large file storage
+* Virtual environments
 
-### Part 5: Algorithmic trading
+### Part 5: Algorithmic trading ([case study](https://github.com/cafawo/FinancialDataAnalytics/tree/master/casestudy))
 * Strategy development
 * Back-testing
 * (Paper-)Trading and execution
 * Monitoring and reporting
-
-### Part 6: Server infrastructure
-* Python environments
-* Pythonanywhere
-
 
 ## Disclaimer:
 This syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.
