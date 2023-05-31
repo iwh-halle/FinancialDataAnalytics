@@ -44,8 +44,8 @@ The second benchmark strategy is called *single moving average* (see 3.11 in Kak
 $$
 \text{Signal} = 
 \begin{cases} 
-\text{`long'} & \text{if } P \ge \text{SMA}(10) \\
-\text{`short'} & \text{if } P < \text{SMA}(10)
+\textit{long} & \text{if } P \ge \text{SMA}(10) \\
+\textit{short} & \text{if } P < \text{SMA}(10)
 \end{cases}
 $$
 
