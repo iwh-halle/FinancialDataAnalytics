@@ -155,5 +155,9 @@ git show -s <commit>
 * (Paper-)Trading and execution
 * Monitoring and reporting
 
+### Part 6: Data sourcing ([slides_pt5.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
+* Web scraping
+* Textual analysis
+
 ## Disclaimer:
 This syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.
