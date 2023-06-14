@@ -149,15 +149,17 @@ git show -s <commit>
 * Large file storage
 * Virtual environments
 
-### Part 5: Algorithmic trading ([case study](https://github.com/cafawo/FinancialDataAnalytics/tree/master/casestudy))
+### Case study: Algorithmic trading ([casestudy/](https://github.com/cafawo/FinancialDataAnalytics/tree/master/casestudy))
 * Strategy development
 * Back-testing
 * (Paper-)Trading and execution
 * Monitoring and reporting
 
-### Part 6: Data sourcing ([slides_pt5.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
+### Part 5: Data sourcing ([slides_pt5.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
 * Web scraping
 * Textual analysis
+* Recurring tasks
+* Scheduled tasks
 
 ## Disclaimer:
 This syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.
