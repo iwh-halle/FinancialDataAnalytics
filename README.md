@@ -11,7 +11,6 @@ MLU - Martin Luther University Halle-Wittenberg
 fabian.woebbeking@iwh-halle.de
 
 
-
 **Birte Winter**</br>
 PhD Candidate, Teaching Assistant (TA)
 
@@ -36,7 +35,7 @@ This course is designed to provide students with a hands-on understanding of the
 
 ## Studip (course schedule)
 
-The course shedule is available at: https://studip.uni-halle.de/dispatch.php/course/details?sem_id=ceee7624465e9d8fa7fdbff72265df10
+The course schedule is available at: https://studip.uni-halle.de/dispatch.php/course/details?sem_id=ceee7624465e9d8fa7fdbff72265df10
 
 
 ## Materials
@@ -73,6 +72,7 @@ This course is predominantly hands on and draws from several subject areas, such
 * "Margin Call" (J. C. Chandor)
 * https://stackoverflow.com/
 * https://docs.python.org/3/tutorial/index.html
+* https://git-scm.com/book/en/v2
 
 
 ## Grading Policy
@@ -92,7 +92,7 @@ All students are requested to [commit](https://git-scm.com/docs/git-commit) and 
 
 ### Deadlines
 
-* Homework assignments have to be commited before the subsequent lecture
+* Homework assignments have to be committed before the subsequent lecture
 * Case submission deadlines will be announced with the case description
 
 The deadlines for all deliverables are tracked through their commit timestamp. As such, it does not matter at what point in time during the lecture you register your GitHub repository (see previous section). Should you be interested in the timestamp for a specific commit, try this:
@@ -100,8 +100,6 @@ The deadlines for all deliverables are tracked through their commit timestamp. A
 ```
 git show -s <commit>
 ```
-
-
 
 
 ## Structure
