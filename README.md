@@ -61,13 +61,12 @@ FinancialDataAnalytics/
 
 You can download the course repository using
 ```Bash
-# First time
 git clone https://github.com/cafawo/FinancialDataAnalytics.git
-
-# Update regularly with
+```
+Make sure to update the repository regularly, especially before a lecture, using
+```Bash
 git pull
 ```
-
 
 As a backup, instead of opening .ipynb files locally, you can open the slides
 * using [**Google's Colab HERE**](https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb),
