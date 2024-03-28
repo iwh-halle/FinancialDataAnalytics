@@ -1,6 +1,6 @@
 ![head.png](figures/head.jpg)
 
-# Financial Data Analytics in Python
+# Financial Data Analytics in Python 2024
 
 **Prof. Dr. Fabian Woebbeking**</br>
 Assistant Professor of Financial Economics
@@ -28,19 +28,21 @@ This course is designed to provide students with a hands-on understanding of the
 * Strong interest and pre-knowledge in financial economics
 * Basic knowledge of programming (preferably Python) and statistics
 * All the software used during this course are open-source and/or free, this includes:
-    * Python (Anaconda distribution): https://www.anaconda.com/products/distribution
+    * Python
+      * [GitHub Codespaces](https://github.com/features/codespaces)
+      * [Anaconda distribution](https://www.anaconda.com/products/distribution)
+      * ... whatever works for you
     * Git: https://git-scm.com/
     * GitHub: https://skills.github.com/
 
 
 ## Studip (course schedule)
 
-The course schedule is available at: https://studip.uni-halle.de/dispatch.php/course/details?sem_id=ceee7624465e9d8fa7fdbff72265df10
-
+This course consists of both lectures and accompanying tutorial sessions. The schedule and rooms are announced on [Stud.IP (HERE)](https://studip.uni-halle.de/dispatch.php/course/details?sem_id=5a9defd4ce9b514471199574c12ee710&again=yes).
 
 ## Materials
 
-The course is hosted as a Git repository on GitHub: https://github.com/cafawo/FinancialDataAnalytics
+All materials are hosted as a Git repository on GitHub: [https://github.com/iwh-halle/FinancialDataAnalytics](https://github.com/iwh-halle/FinancialDataAnalytics)
 
 ```bash
 FinancialDataAnalytics/
@@ -55,23 +57,19 @@ FinancialDataAnalytics/
 ├── README.md  # Syllabus
 ├── slides.ipynb  # MAIN source of information for this class
 ├── slides_pt[n].ipynb  # See 'structure' below
-├── slides.html   # Static version of the script
 └── ...  # TBA
 ```
 
-You can download the course repository using
+You can view or download the materials directly from GitHub, using the link above, or you can clone the repository using
 ```Bash
-git clone https://github.com/cafawo/FinancialDataAnalytics.git
+git clone https://github.com/iwh-halle/FinancialDataAnalytics.git
 ```
 Make sure to update the repository regularly, especially before a lecture, using
 ```Bash
 git pull
 ```
 
-As a backup, instead of opening .ipynb files locally, you can open the slides
-* using [**Google's Colab HERE**](https://colab.research.google.com/github/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb),
-* or as a static (offline) [html version HERE](https://cafawo.github.io/FinancialDataAnalytics/slides.html).
-
+## Reading
 
 This course is predominantly hands on and draws from several subject areas, such as financial economics, data science or textual analysis. As such, there exists no single text book recommendation. Relevant 'reading' material is linked in the script. That being said, resources include but are not limited to:
 * "Python for Finance" (Yves Hilpisch)
@@ -88,8 +86,8 @@ This course is predominantly hands on and draws from several subject areas, such
 
 The grading policy is discussed in detail during the first lecture.
 
-* Homework assignments: 20%
-* Case study: 50%
+* Homework assignments: 30%
+* Case study: 40%
 * Presentation: 30%
 * Bonus points: + 15%
   * Participation in GitHub discussions: https://github.com/cafawo/FinancialDataAnalytics/discussions
@@ -97,18 +95,22 @@ The grading policy is discussed in detail during the first lecture.
 
 ### How to submit your work
 
-All students are requested to [commit](https://git-scm.com/docs/git-commit) and [push](https://git-scm.com/docs/git-push) their homework, cases and presentation material to one GitHub repository. We will discuss this during the first lecture, also see [/homework/01_setup.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/homework/01_setup.ipynb). In order to submit your hard work, you are requested to add GitHub user: '[birte0](https://github.com/birte0)' to your repository **before the last lecture(!)**, see [information on how to invite collaborators HERE](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository). We will notify you once your repository has been successfully registered.
+All students are required to register using this link: [https://classroom.github.com/a/SAilgt2b](https://classroom.github.com/a/SAilgt2b)
+
+You can use your existing GitHub account or create a new one free of charge. Please note that you can optionally sign up for GitHub Pro, which is offered free of charge with your university email address.
+
+All deliverables must be submitted through this system. To this end, there is one simple rule:
+
+**stage + commit + push = submit!**
+
+If this doesn’t make much sense to you now, don't worry. We will discuss how to use Git and GitHub extensively, and you will have tutorial sessions for additional guidance.
 
 ### Deadlines
 
-* Homework assignments have to be committed before the subsequent lecture
-* Case submission deadlines will be announced with the case description
+* Homework assignments, have to be submitted before the next lecture.
+* Case submission deadlines will be announced with the case description.
 
-The deadlines for all deliverables are tracked through their commit timestamp. As such, it does not matter at what point in time during the lecture you register your GitHub repository (see previous section). Should you be interested in the timestamp for a specific commit, try this:
-
-```
-git show -s <commit>
-```
+The deadlines for all deliverables are tracked through their commit timestamps. We will talk more about this later.
 
 
 ## Structure
@@ -163,11 +165,7 @@ git show -s <commit>
 * Scheduled tasks
 * Logging
 
-### Case study: Algorithmic trading ([casestudy/](https://github.com/cafawo/FinancialDataAnalytics/tree/master/casestudy))
-* Strategy development
-* Back-testing
-* (Paper-)Trading and execution
-* Monitoring and reporting
+### Case study: TBA
 
 ## Disclaimer:
 This syllabus is a general plan for the course; deviations announced to the class by the instructor may be necessary.
