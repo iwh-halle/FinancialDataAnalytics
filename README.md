@@ -23,6 +23,10 @@ birte.winter@iwh-halle.de
 
 This course is designed to provide students with a hands-on understanding of the use of data science techniques in the field of finance. Students will learn how to collect, clean, and analyze financial data using Python, SQL and other tools. Topics will include financial data visualization, time series analysis and statistical modeling. Students will work on real-world projects to apply their knowledge to financial data.
 
+## Course schedule
+
+This course consists of both lectures and accompanying tutorial sessions. The schedule and rooms are announced on Stud.IP, see important links below.
+
 ## Prerequisites
 
 * Strong interest and pre-knowledge in financial economics
@@ -35,14 +39,16 @@ This course is designed to provide students with a hands-on understanding of the
     * Git: https://git-scm.com/
     * GitHub: https://skills.github.com/
 
+## Important links
 
-## Studip (course schedule)
+* [Course repository](https://github.com/iwh-halle/FinancialDataAnalytics)
+* [GitHub classroom](https://classroom.github.com/a/SAilgt2b)
+* [Stud.IP page](https://studip.uni-halle.de/dispatch.php/course/details?sem_id=5a9defd4ce9b514471199574c12ee710&again=yes)
 
-This course consists of both lectures and accompanying tutorial sessions. The schedule and rooms are announced on [Stud.IP (HERE)](https://studip.uni-halle.de/dispatch.php/course/details?sem_id=5a9defd4ce9b514471199574c12ee710&again=yes).
 
 ## Materials
 
-All materials are hosted as a Git repository on GitHub: [https://github.com/iwh-halle/FinancialDataAnalytics](https://github.com/iwh-halle/FinancialDataAnalytics)
+All materials are hosted as a Git repository on GitHub.
 
 ```bash
 FinancialDataAnalytics/
@@ -95,9 +101,9 @@ The grading policy is discussed in detail during the first lecture.
 
 ### How to submit your work
 
-All students are required to register using this link: [https://classroom.github.com/a/SAilgt2b](https://classroom.github.com/a/SAilgt2b)
+All students are required to register using the classroom link that you can find on top of this page, see "Important links". 
 
-You can use your existing GitHub account or create a new one free of charge. Please note that you can optionally sign up for GitHub Pro, which is offered free of charge with your university email address.
+You can use your existing GitHub account or create a new account free of charge. Please note that you can optionally sign up for GitHub Pro, which is offered free of charge with your university email address.
 
 All deliverables must be submitted through this system. To this end, there is one simple rule:
 
