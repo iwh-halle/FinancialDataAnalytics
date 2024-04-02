@@ -136,7 +136,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Complex data structures
 * Plotting
 
-### Part 2: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
+### Part 2: Stochastic and numerical methods
 
 * Random numbers
 * Probability distributions
@@ -148,8 +148,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Valuation
 * Risk measures
 
-### Part 3: Financial time series ([slides_pt3.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
-
+### Part 3: Financial time series
 * Correlation
 * Linear regression models (OLS)
 * Auto regressive models (AR)
@@ -158,7 +157,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Cointegration
 * Empirical stylized facts
 
-### Part 4: Data management ([slides_pt4.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt4.ipynb))
+### Part 4: Data management
 * Object-oriented programming
 * Loose coupling
 * Market data APIs
@@ -167,12 +166,19 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Large file storage
 * Virtual environments
 
-### Part 5: Data sourcing ([slides_pt5.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
+### Part 5: Data sourcing
 * Web scraping
-* Natural language processing (NLP)
 * Server infrastructure
 * Scheduled tasks
 * Logging
+
+### Part 6: Natural language processing (NLP)
+* Processing textual data
+* Bag of words
+* Word embedding
+* Transformer architecture
+* Large Language Models (LLM)
+* ChatGPT API
 
 ### Case study: TBA
 
