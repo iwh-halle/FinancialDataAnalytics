@@ -23,9 +23,11 @@ birte.winter@iwh-halle.de
 
 This course is designed to provide students with a hands-on understanding of the use of data science techniques in the field of finance. Students will learn how to collect, clean, and analyze financial data using Python, SQL and other tools. Topics will include financial data visualization, time series analysis and statistical modeling. Students will work on real-world projects to apply their knowledge to financial data.
 
-## Course schedule
+## Schedule
 
 This course consists of both lectures and accompanying tutorial sessions. The schedule and rooms are announced on Stud.IP, see important links below.
+
+**Lectures and tutorials start as scheduled cum tempore ($t + 15$ minutes)!**
 
 ## Prerequisites
 
@@ -58,11 +60,11 @@ FinancialDataAnalytics/
 │   └── ...  
 ├── homework/  # Homework assignments and solutions
 │   └── ...  
-├── src/  # Python scripts (.py)
+├── src/  # Python helper scripts (.py)
 │   └── ...  
-├── README.md  # Syllabus
-├── slides.ipynb  # MAIN source of information for this class
-├── slides_pt[n].ipynb  # See 'structure' below
+├── README.md  # Syllabus (this file)
+├── slides.ipynb  # Slides
+├── slides_pt[n].ipynb  # More slides, see 'structure' below
 └── ...  # TBA
 ```
 
