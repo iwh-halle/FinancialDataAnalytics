@@ -98,6 +98,7 @@ The grading policy is discussed in detail during the first lecture.
 * Case study: 40%
 * Presentation: 30%
 * Bonus points: + 15%
+  * StudySnips: https://studysnips.eu.pythonanywhere.com/
   * Participation in GitHub discussions: https://github.com/iwh-halle/FinancialDataAnalytics/discussions
   * Bug bounty (pull requests): https://github.com/iwh-halle/FinancialDataAnalytics/pulls
 
