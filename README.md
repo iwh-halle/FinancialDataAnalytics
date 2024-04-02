@@ -98,8 +98,8 @@ The grading policy is discussed in detail during the first lecture.
 * Case study: 40%
 * Presentation: 30%
 * Bonus points: + 15%
-  * Participation in GitHub discussions: https://github.com/cafawo/FinancialDataAnalytics/discussions
-  * Bug bounty (pull requests): https://github.com/cafawo/FinancialDataAnalytics/pulls
+  * Participation in GitHub discussions: https://github.com/iwh-halle/FinancialDataAnalytics/discussions
+  * Bug bounty (pull requests): https://github.com/iwh-halle/FinancialDataAnalytics/pulls
 
 ### How to submit your work
 
@@ -123,7 +123,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 
 ## Structure
 
-### Part 1: Introduction ([slides.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides.ipynb))
+### Part 1: Introduction ([slides.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides.ipynb))
 
 * Discussion of grading scheme
 * Setting up the tech
@@ -135,7 +135,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Complex data structures
 * Plotting
 
-### Part 2: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
+### Part 2: Stochastics and numerical methods ([slides_pt2.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt2.ipynb))
 
 * Random numbers
 * Probability distributions
@@ -147,7 +147,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Valuation
 * Risk measures
 
-### Part 3: Financial time series ([slides_pt3.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
+### Part 3: Financial time series ([slides_pt3.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt3.ipynb))
 
 * Correlation
 * Linear regression models (OLS)
@@ -157,7 +157,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Cointegration
 * Empirical stylized facts
 
-### Part 4: Data management ([slides_pt4.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt4.ipynb))
+### Part 4: Data management ([slides_pt4.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt4.ipynb))
 * Object-oriented programming
 * Loose coupling
 * Market data APIs
@@ -166,7 +166,7 @@ The deadlines for all deliverables are tracked through their commit timestamps. 
 * Large file storage
 * Virtual environments
 
-### Part 5: Data sourcing ([slides_pt5.ipynb](https://github.com/cafawo/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
+### Part 5: Data sourcing ([slides_pt5.ipynb](https://github.com/iwh-halle/FinancialDataAnalytics/blob/master/slides_pt5.ipynb))
 * Web scraping
 * Natural language processing (NLP)
 * Server infrastructure
