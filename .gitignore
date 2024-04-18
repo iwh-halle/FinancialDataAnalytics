@@ -1,6 +1,7 @@
 # Lecture specific
 *.db
-*ignore/
+*ignore*
+desktop.ini
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
