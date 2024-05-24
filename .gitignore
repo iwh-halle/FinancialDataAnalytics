@@ -2,6 +2,7 @@
 *.db
 *ignore*
 desktop.ini
+local.ini
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
