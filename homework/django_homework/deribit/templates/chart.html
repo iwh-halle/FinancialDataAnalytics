@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC Hourly Price Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            width: 95vw !important;
+            height: 90vh !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hourly BTC Prices</h1>
+    <canvas id="btcPriceChart"></canvas>
+    <script>
+        const ctx = document.getElementById('btcPriceChart').getContext('2d');
+        fetch('/api/chart/')
+            .then(response => response.json())
+            .then(data => {
+                const timestamps = data.data.map(item => item[0]);  // Use timestamps as simple strings
+                const prices = data.data.map(item => item[1]);
+                const btcPriceChart = new Chart(ctx, {
+                    type: 'line',  // Line chart for time series data
+                    data: {
+                        labels: timestamps,  // Directly use the string labels
+                        datasets: [{
+                            label: 'BTC Hourly Price',
+                            data: prices,
+                            borderColor: 'rgb(42, 52, 57)',
+                            backgroundColor: 'rgba(42, 52, 57, 0.2)',
+                            borderWidth: 1,
+                            fill: false  // No fill for line chart
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                display: true,  // Ensure the x-axis is displayed
+                                title: {
+                                    display: true,
+                                    text: 'Time'
+                                }
+                            },
+                            y: {
+                                beginAtZero: false,  // Start the y-axis from the lowest data point
+                                title: {
+                                    display: true,
+                                    text: 'Price (USD)'
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
